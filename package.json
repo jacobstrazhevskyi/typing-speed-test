@@ -1,5 +1,5 @@
 {
-  "name": "project_template",
+  "name": "typing-speed-test",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -26,6 +26,7 @@
     "gh-pages": "^4.0.0",
     "parcel": "^1.12.3",
     "stylelint": "^14.12.1",
-    "stylelint-config-standard-scss": "^5.0.0"
+    "stylelint-config-standard-scss": "^5.0.0",
+    "node-sass": "^8.0.0"
   }
 }
