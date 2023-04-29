@@ -1,21 +1,22 @@
 {
   "name": "typing-speed-test",
   "version": "1.0.0",
-  "description": "",
+  "description": "typing speed test on DOM js",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel ./src/index.html --open",
-    "lint:html": "linthtml src/**/*.html",
-    "lint:css": "stylelint **/*.scss",
-    "lint:js": "eslint ./src",
+    "lint:html": "linthtml src/index.html",
+    "lint:css": "stylelint ./src/sass/**/*.scss",
+    "lint:js": "eslint ./src/js",
     "lint": "concurrently \"npm run lint:html\" \"npm run lint:css\" \"npm run lint:js\"",
     "build": "rm -rf dist && parcel build ./src/index.html --public-url ./",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "compile:sass": "node-sass ./src/sass/main.scss ./src/css/style.css -w"
   },
   "keywords": [],
-  "author": "",
+  "author": "jacob.strazhevskyi",
   "license": "ISC",
   "devDependencies": {
     "@linthtml/linthtml": "^0.9.0",
